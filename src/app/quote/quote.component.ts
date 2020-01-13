@@ -7,10 +7,13 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] =[
-    {name:'toaday is the day',author:'bach' ,submitter:'baraka'},
-    {name:'show me how you do',author:'vin Diesel' ,submitter:'bach'}
+    new Quote('today is the day','bach' ,'baraka'),
+    new Quote('show me how you do','vin Diesel' ,'bach')
   ];
-    
+    toggleDetails(index){
+      this.quotes[index].showDescription = !this.quotes[index].
+      showDescription;
+    }    
 
   constructor() { }
 
