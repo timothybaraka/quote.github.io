@@ -4,6 +4,6 @@ constructor(public name:string,
     public author:string,
     public submitter:string
 ){
-    this.showDescription=false;
+    this.showDescription=true;
 }
 }

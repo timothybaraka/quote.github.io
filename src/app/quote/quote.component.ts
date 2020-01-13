@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
     new Quote('show me how you do','vin Diesel' ,'bach')
   ];
     toggleDetails(index){
-      this.quotes[index].showDescription = !this.quotes[index].
+      this.quotes[index].showDescription = this.quotes[index].
       showDescription;
     }    
 
