@@ -10,10 +10,20 @@ export class QuoteComponent implements OnInit {
     new Quote('today is the day','bach' ,'baraka'),
     new Quote('show me how you do','vin Diesel' ,'bach')
   ];
-    toggleDetails(index){
-      this.quotes[index].showDescription = this.quotes[index].
-      showDescription;
-    }    
+
+    deleteQuote(isComplete, index){
+      if(isComplete){
+        let toDelete = confirm(`Are you sure you want to delete
+        ${this.quotes[index].name}?`)
+       
+      if(toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
+    
+    
 
   constructor() { }
 

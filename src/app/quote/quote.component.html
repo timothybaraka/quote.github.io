@@ -5,8 +5,15 @@
         {{quote.name}}
       
       
-        <app-quote-detail [quote]='quote'></app-quote-detail>
+        <app-quote-detail [quote]='quote'
+        (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
       </li>
     </ul>
     
+    
+    <div>
+      <app-goal-form>
+
+      </app-goal-form>
+    </div>
   </div>
