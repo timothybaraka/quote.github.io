@@ -1,8 +1,8 @@
 h2{
     text-align: center;
 }
-.wallp{background-image:url("../cars1.jpg");
-    
+.wallp{
+    background-image:url("../cars1.jpg");
     height: max-content;
 }
 #galore{

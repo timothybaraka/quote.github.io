@@ -7,8 +7,8 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote('Show me how you ride and i will tell you who you are','Vin Diesel', 'baraka'),
-    new Quote('Progress is impossible without change,and those who cannot change their minds cannot change anything', 'George Shaw', 'bach')
+    new Quote('Show me how you ride and i will tell you who you are','Vin Diesel', 'baraka',new Date(2020,6,19)),
+    new Quote('Progress is impossible without change,and those who cannot change their minds cannot change anything', 'George Shaw', 'bach',new Date(2020,2,3))
   ];
 
   deleteQuote(isComplete, index) {
