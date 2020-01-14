@@ -4,6 +4,7 @@ h2{
 .wallp{
     background-image:url("../cars1.jpg");
     height: max-content;
+    text-align: center;
 }
 #galore{
     color:white;
