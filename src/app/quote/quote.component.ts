@@ -23,6 +23,7 @@ export class QuoteComponent implements OnInit {
 
   }
   addNewQuote(quote) {
+    quote.name=quote
     this.quotes.push(quote);
 
   }
