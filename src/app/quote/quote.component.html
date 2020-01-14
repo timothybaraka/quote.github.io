@@ -9,7 +9,23 @@
     <ul>
       <li *ngFor='let quote of quotes;let i=index'> 
         {{quote.name}}
-      
+        
+        <div>
+        <button
+        [ngStyle]="{'font-weight':'bolder', 'width':'100px','border-radius':'15px','background':'#00FE92','border':'none'}"
+        (click)="thumbsUp(quote)"
+      >
+        likes
+      </button>
+      <p>{{quote.like}}</p>
+      <button
+        [ngStyle]="{'font-weight':'bolder', 'width':'100px','border-radius':'15px','background':'#9ADE00','border':'none'}"
+        (click)="thumbsDown(quote)"
+      >
+        Dislikes
+      </button>
+      <!-- <p>{{quote.dislike}}</p> -->
+        </div>
       
         <app-quote-detail [quote]='quote'
         (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>

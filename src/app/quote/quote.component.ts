@@ -22,6 +22,16 @@ export class QuoteComponent implements OnInit {
     }
 
   }
+
+  
+  thumbsUp(quote) {
+    quote.like = quote.like + 1;
+  }
+  thumbsDown(quote) {
+    quote.dislike = quote.dislike + 1;
+  }
+
+
   addNewQuote(quote) {
     quote.name=quote.name
     quote.author=quote.author
