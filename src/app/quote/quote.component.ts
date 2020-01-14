@@ -6,30 +6,28 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes:Quote[] =[
-    new Quote('today is the day','bach' ,'baraka'),
-    new Quote('show me how you do','vin Diesel' ,'bach')
+  quotes: Quote[] = [
+    new Quote('Show me how you ride and i will tell you who you are','Vin Diesel', 'baraka'),
+    new Quote('Progress is impossible without change,and those who cannot change their minds cannot change anything', 'George Shaw', 'bach')
   ];
 
-    deleteQuote(isComplete, index){
-      if(isComplete){
-        let toDelete = confirm(`Are you sure you want to delete
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete
         ${this.quotes[index].name}?`)
-       
-      if(toDelete){
-        this.quotes.splice(index,1)
+
+      if (toDelete) {
+        this.quotes.splice(index, 1)
       }
     }
-    addNewQuote(quote){
-      let quoteLength = this.quote.length;
-      quote.id = quoteLength+1;
-      quote.completeDate = new Date(quote.completeDate)
-      this.quote.push(quote)
-    }
+
+  }
+  addNewQuote(quote) {
+    this.quotes.push(quote);
+
   }
 
-    
-    
+
 
   constructor() { }
 
