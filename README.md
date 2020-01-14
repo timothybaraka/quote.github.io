@@ -24,6 +24,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Codebeat Link
+[![codebeat badge](https://codebeat.co/badges/09d8f5ae-f333-421c-ae56-7d3b247c04f1)](https://codebeat.co/projects/github-com-timothybaraka-quote-master)
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
