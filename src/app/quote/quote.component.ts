@@ -23,8 +23,12 @@ export class QuoteComponent implements OnInit {
 
   }
   addNewQuote(quote) {
-    quote.name=quote
+    quote.name=quote.name
+    quote.author=quote.author
+    quote.submitter=quote.submitter
+    quote.completeDate= new Date(quote.completeDate)
     this.quotes.push(quote);
+   
 
   }
 
